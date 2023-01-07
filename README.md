@@ -1,1 +1,11 @@
-"# CTSC" 
+## 基于对比学习的时间序列聚类方法
+
+**摘** **要**  现有深度聚类方法难以直观地定义时间序列的相似性，严重依赖于复杂的特征提取网络和聚类算法。使用对比学习的手段可以从正负样本数据的角度定义时间序列的区间相似性，并对特征提取和聚类进行联合优化。基于对比学习的思想，提出了一种不依赖于复杂表示网络的时间序列聚类模型。同时，为解决现有时间序列数据增强方法难以描述时间序列的变换不变性的问题，提出了一种基于时间序列形状特征的数据增强方法，在忽略数据时域特征情况下捕捉序列的相似性。模型通过设置不同的形状转换参数构造正负样本对，学习特征表示并投影到特征空间，在实例级对比和聚类级对比层面利用交叉熵损失最大化正样本对相似性，最小化负样本对相似性，实现了端到端的联合学习表示和聚类分配。在32个UCR中的数据集上进行了大量实验，结果表明该模型可以在不依赖于特定表示学习网络的情况下得到持平或优于现有方法的聚类结果。
+
+**关键词：**时间序列聚类；对比学习；数据增强；表示学习；联合优化
+
+## **Time Series Clustering Method Based on Contrastive Learning**
+
+**Abstract**  Existing deep clustering methods are difficult to define the similarity of time series intuitively and rely heavily on complex feature extraction networks and clustering algorithms. Using the means of comparative learning can define the interval similarity of time series from the perspective of positive and negative sample data, and jointly optimize feature extraction and clustering. Based on the idea of contrast learning, a time series clustering model that does not rely on complex representation networks is proposed. Meanwhile, to solve the problem that existing time series data enhancement methods are difficult to describe the transformation invariance of time series, a data enhancement method based on the shape features of time series is proposed to capture the similarity of the series while ignoring the time-domain features of the data. The model constructs positive and negative sample pairs by setting different shape transformation parameters, learns feature representations and projects them into the feature space, maximizes the similarity of positive sample pairs and minimizes the similarity of negative sample pairs using cross-entropy loss at the instance-level comparison and cluster-level comparison levels, and achieves end-to-end joint learning representation and cluster assignment. Extensive experiments are conducted on 32 datasets in the UCR, and the results show that the model can obtain clustering results that are on par or better than existing methods without relying on a specific representation learning network.
+
+**Keywords**  Time series clustering, Contrastive learning, Data enhancement, Representation learning, Jointly optimize
